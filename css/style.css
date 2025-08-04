@@ -1,0 +1,56 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F8F8;
+    display: flex;
+}
+#login{
+    background-color: white;
+    padding: 160px 100px;
+    width: 60%;
+    text-align: center;
+}
+#login h1{
+    color: #333333;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 68px;
+}
+#login input{
+    display: block;
+    width: 100%;
+    padding: 14px 20px 14px 14px;
+    border-radius: 12px;
+    background-color: #E5E5E7;
+    border: 0;
+    margin-bottom: 12px;
+}
+#login input:focus{
+    outline: 0;
+}
+#login button{
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #04AA6D;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+.image{
+    padding: 100px 80px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    text-align: center;
+}
+.image h2{
+    color: #04AA6D;
+    font-size: 30px;
+    font-weight: 500;
+}

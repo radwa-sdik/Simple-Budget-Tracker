@@ -1,0 +1,112 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 20px;
+}
+body h1 > span{
+    color: brown;
+}
+.summary{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.summary .stat{
+    padding: 25px 40px;
+    border-radius: 8px;
+    width: 30%;
+    color: white;
+}
+.summary .stat:first-of-type{
+    background-color: cornflowerblue;
+}
+.summary .stat:nth-of-type(2){
+    background-color: mediumseagreen;
+}
+.summary .stat:last-of-type{
+    background-color: rgb(233, 24, 24);
+}
+.addTransaction form{
+    text-align: left;
+    display: flex;
+    gap: 8px;
+}
+.addTransaction input,
+.addTransaction select,.addTransaction button{
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: lightgray;
+    border-style: solid;
+}
+.addTransaction button{
+    border: 0;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 600;
+}
+.transactions{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+.transactions table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.transactions th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+.transactions tr:nth-child(even){background-color: #f2f2f2}
+
+.transactions th {
+    background-color: #04AA6D;
+    color: white;
+}
+.transactions button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.transactions .view{
+    width: 25px;
+    height: 25px;
+}
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 999;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px; right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+button,
+.addTransaction select,
+.addTransaction #date{
+    cursor: pointer;
+}

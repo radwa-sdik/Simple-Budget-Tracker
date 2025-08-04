@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboardStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="pageTitle"></h1>
+    <div class="summary">
+        <div class="stat">
+            <h4>Current Balance</h4>
+            <p id="balance">34,500 EG</p>
+        </div>
+        <div class="stat">
+            <h4>Total Income</h4>
+            <p id="income">62,500 EG</p>
+        </div>
+        <div class="stat">
+            <h4>Total Expense</h4>
+            <p id="expense">28,000 EG</p>
+        </div>
+    </div>
+    <div class="addTransaction">
+        <form id="" action="" method="get" onsubmit="addTransaction(event)">
+            <input type="date" name="date" id="date">
+            <input type="text" name="description" id="description" placeholder="Description">
+            <input type="number" name="amount" id="amount" placeholder="Amount">
+            <select name="type" id="type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+    <div class="transactions">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Income</th>
+                    <th>Expense</th>
+                    <th>Running Balance</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="trData">
+            </tbody>
+        </table>
+        <div id="transactionModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h2>Transaction Details</h2>
+                <p><strong>Date:</strong> <span id="modalDate"></span></p>
+                <p><strong>Description:</strong> <span id="modalDesc"></span></p>
+                <p><strong>Type:</strong> <span id="modalType"></span></p>
+                <p><strong>Amount:</strong> <span id="modalAmount"></span></p>
+                <p><strong>Balance Before:</strong> <span id="modalBefore"></span></p>
+                <p><strong>Balance After:</strong> <span id="modalAfter"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashScript.js"></script>
+</body>
+</html>
